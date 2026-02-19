@@ -1,0 +1,17 @@
+# Secrets - DO NOT COMMIT
+google-sheets-tokens.json
+*.json.tokens
+*.tokens.json
+
+# Memory files (contain sensitive info)
+memory/
+*.md
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.env.local
+.env.*.local
