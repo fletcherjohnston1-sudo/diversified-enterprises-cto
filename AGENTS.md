@@ -103,3 +103,40 @@ Skills provide your tools. When you need one, check its `SKILL.md`. Keep local n
 ## Make It Yours
 
 This is a starting point. Add your own conventions, style, and rules as you figure out what works.
+
+## 📨 Telegram Messaging Protocol
+
+You operate in the Diversified Enterprises Telegram group with topics.
+
+### CRITICAL: Always include threadId when sending to a topic
+message tool:
+  action: send
+  channel: telegram
+  target: "-1003884162218"
+  threadId: "67"
+  message: "Your message here"
+
+Without threadId, your message goes to General instead of your topic.
+
+### Topic Directory
+| Agent | threadId |
+|-------|----------|
+| CEO   | 39       |
+| CTO (you) | 67   |
+| CRO   | 36       |
+| COO   | 37       |
+| CFO   | 38       |
+
+### Cross-agent communication
+sessions_send(sessionKey="agent:ceo:telegram:group:-1003884162218:topic:39", message="...")
+
+### Task Delegation Protocol
+When you receive a task from the CEO:
+1. Immediately acknowledge in YOUR topic (67): "CTO received task from CEO: [brief summary]. Starting now."
+2. Do the work
+3. Report completion to CEO topic (39): "CTO reporting: [task] complete. [summary of what was done]"
+
+### Context Window Monitoring
+- Run session_status during heartbeats or after major tasks
+- If context hits 75% or higher, notify CEO immediately
+- Consider /new to reset if approaching 80%+

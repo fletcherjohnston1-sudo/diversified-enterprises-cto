@@ -1,0 +1,122 @@
+{
+  "version": "1.0",
+  "lastUpdated": "2026-02-23T17:30:00Z",
+  "reportPeriod": {
+    "week": 8,
+    "year": 2026,
+    "start": "2026-02-17",
+    "end": "2026-02-23"
+  },
+  "themes": [
+    {
+      "id": "th_001",
+      "name": "AI Infrastructure",
+      "category": "Technology",
+      "score": 80.75,
+      "previousScore": 85,
+      "momentum": 0.10,
+      "confidence": 0.87,
+      "lastConvergence": "2026-02-20",
+      "signals": [
+        {"type": "earnings", "source": "NVDA", "date": "2026-02-19", "impact": 0.15},
+        {"type": "funding", "source": "CoreWeave", "date": "2026-02-18", "impact": 0.10}
+      ],
+      "convergenceCount": 4,
+      "decayApplied": 0.05,
+      "signalCount": 2,
+      "convergenceStatus": "stable",
+      "trend": "maintained"
+    },
+    {
+      "id": "th_002",
+      "name": "Climate Tech",
+      "category": "Sustainability",
+      "score": 58.90,
+      "previousScore": 62,
+      "momentum": 0.06,
+      "confidence": 0.68,
+      "lastConvergence": "2026-02-15",
+      "signals": [
+        {"type": "policy", "source": "EU Commission", "date": "2026-02-10", "impact": 0.08}
+      ],
+      "convergenceCount": 2,
+      "decayApplied": 0.05,
+      "signalCount": 1,
+      "convergenceStatus": "converging",
+      "trend": "declining"
+    },
+    {
+      "id": "th_003",
+      "name": "Fintech Payments",
+      "category": "Financial Services",
+      "score": 70.30,
+      "previousScore": 74,
+      "momentum": 0.04,
+      "confidence": 0.78,
+      "lastConvergence": "2026-02-22",
+      "signals": [
+        {"type": "regulatory", "source": "Fed", "date": "2026-02-21", "impact": 0.06}
+      ],
+      "convergenceCount": 3,
+      "decayApplied": 0.05,
+      "signalCount": 1,
+      "convergenceStatus": "stable",
+      "trend": "declining"
+    },
+    {
+      "id": "th_004",
+      "name": "Biotech Regenerative",
+      "category": "Healthcare",
+      "score": 55.10,
+      "previousScore": 58,
+      "momentum": 0.14,
+      "confidence": 0.63,
+      "lastConvergence": "2026-02-12",
+      "signals": [
+        {"type": "trial", "source": "Vertex", "date": "2026-02-11", "impact": 0.12}
+      ],
+      "convergenceCount": 1,
+      "decayApplied": 0.05,
+      "signalCount": 1,
+      "convergenceStatus": "converging",
+      "trend": "declining"
+    },
+    {
+      "id": "th_005",
+      "name": "Quantum Computing",
+      "category": "Technology",
+      "score": 42.75,
+      "previousScore": 45,
+      "momentum": 0.18,
+      "confidence": 0.50,
+      "lastConvergence": "2026-02-08",
+      "signals": [],
+      "convergenceCount": 0,
+      "decayApplied": 0.05,
+      "signalCount": 0,
+      "convergenceStatus": "diverging",
+      "trend": "declining"
+    }
+  ],
+  "settings": {
+    "decayRate": 0.05,
+    "convergenceThreshold": 3,
+    "scoreFloor": 20,
+    "scoreCeiling": 100
+  },
+  "convergence": {
+    "overallStatus": "monitoring",
+    "stableThemes": ["th_001", "th_003"],
+    "convergingThemes": ["th_002", "th_004"],
+    "divergingThemes": ["th_005"]
+  },
+  "summary": {
+    "totalThemes": 5,
+    "stable": 2,
+    "converging": 2,
+    "diverging": 1,
+    "avgScore": 61.56,
+    "topTheme": {"id": "th_001", "name": "AI Infrastructure", "score": 80.75},
+    "needsAttention": ["th_005"]
+  }
+}

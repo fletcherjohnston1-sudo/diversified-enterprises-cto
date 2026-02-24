@@ -1,0 +1,109 @@
+{
+  "reportId": "WTR-2026-W08",
+  "generatedAt": "2026-02-23T17:30:00Z",
+  "reportPeriod": {
+    "week": 8,
+    "year": 2026,
+    "start": "2026-02-17",
+    "end": "2026-02-23"
+  },
+  "executiveSummary": {
+    "status": "monitoring",
+    "overallScore": 61.56,
+    "trend": "stable",
+    "keyDevelopments": [
+      "AI Infrastructure maintains leadership with 80.75 score",
+      "Quantum Computing showing divergence - lowest score at 42.75",
+      "2 themes in converging status requiring monitoring"
+    ]
+  },
+  "themeScorecard": [
+    {
+      "rank": 1,
+      "id": "th_001",
+      "name": "AI Infrastructure",
+      "score": 80.75,
+      "change": -4.25,
+      "trend": "maintained",
+      "status": "stable",
+      "momentum": 0.10,
+      "signals": 2,
+      "analysis": "Leading theme with strong institutional backing. NVDA earnings and CoreWeave funding reinforce position."
+    },
+    {
+      "rank": 2,
+      "id": "th_003",
+      "name": "Fintech Payments",
+      "score": 70.30,
+      "change": -3.70,
+      "trend": "declining",
+      "status": "stable",
+      "momentum": 0.04,
+      "signals": 1,
+      "analysis": "Stable but momentum slowing. Fed regulatory signals provide moderate support."
+    },
+    {
+      "rank": 3,
+      "id": "th_002",
+      "name": "Climate Tech",
+      "score": 58.90,
+      "change": -3.10,
+      "trend": "declining",
+      "status": "converging",
+      "momentum": 0.06,
+      "signals": 1,
+      "analysis": "Below 60 threshold - converging toward watchlist. Needs new catalyst to reverse decline."
+    },
+    {
+      "rank": 4,
+      "id": "th_004",
+      "name": "Biotech Regenerative",
+      "score": 55.10,
+      "change": -2.90,
+      "trend": "declining",
+      "status": "converging",
+      "momentum": 0.14,
+      "signals": 1,
+      "analysis": "High momentum (0.14) but low confidence. Vertex trial results awaited."
+    },
+    {
+      "rank": 5,
+      "id": "th_005",
+      "name": "Quantum Computing",
+      "score": 42.75,
+      "change": -2.25,
+      "trend": "declining",
+      "status": "diverging",
+      "momentum": 0.18,
+      "signals": 0,
+      "analysis": "Diverging theme - lowest score. High momentum but no recent signals. Consider reallocation."
+    }
+  ],
+  "pipelineIntegration": {
+    "totalDeals": 6,
+    "byTheme": {
+      "th_001": {"count": 2, "value": "high", "deals": ["CoreWeave", "Databricks"]},
+      "th_002": {"count": 1, "value": "medium", "deals": ["Carbon Clean"]},
+      "th_003": {"count": 1, "value": "high", "deals": ["Stripe"]},
+      "th_004": {"count": 1, "value": "medium", "deals": ["Biosciences"]},
+      "th_005": {"count": 1, "value": "low", "deals": ["IonQ"]}
+    },
+    "activeReviews": 3,
+    "dueDiligence": 1
+  },
+  "convergenceAnalysis": {
+    "stable": ["th_001", "th_003"],
+    "stableNames": ["AI Infrastructure", "Fintech Payments"],
+    "converging": ["th_002", "th_004"],
+    "convergingNames": ["Climate Tech", "Biotech Regenerative"],
+    "diverging": ["th_005"],
+    "divergingNames": ["Quantum Computing"],
+    "recommendation": "Review th_005 for potential removal; monitor th_002 and th_004 for next 2 weeks"
+  },
+  "actionItems": [
+    {"priority": "high", "action": "Evaluate Quantum Computing (th_005) for removal from active themes", "deadline": "2026-03-01"},
+    {"priority": "medium", "action": "Source new Climate Tech signals to prevent further decay", "deadline": "2026-03-07"},
+    {"priority": "medium", "action": "Complete Stripe (th_003) due diligence review", "deadline": "2026-02-28"}
+  ],
+  "nextUpdate": "2026-03-02T17:00:00Z"
+}

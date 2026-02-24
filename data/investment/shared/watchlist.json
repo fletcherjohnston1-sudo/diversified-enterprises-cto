@@ -1,0 +1,88 @@
+{
+  "version": "1.0",
+  "lastUpdated": "2026-02-23T17:30:00Z",
+  "pipeline": [
+    {
+      "id": "wl_001",
+      "themeId": "th_001",
+      "company": "CoreWeave",
+      "stage": "private",
+      "status": "under_review",
+      "score": 78,
+      "addedDate": "2026-01-15",
+      "analyst": "sarah",
+      "notes": "Leading GPU cloud provider, strong revenue growth"
+    },
+    {
+      "id": "wl_002",
+      "themeId": "th_001",
+      "company": "Databricks",
+      "stage": "private",
+      "status": "due_diligence",
+      "score": 82,
+      "addedDate": "2026-01-20",
+      "analyst": "mike",
+      "notes": "Data/AI platform, potential IPO candidate"
+    },
+    {
+      "id": "wl_003",
+      "themeId": "th_002",
+      "company": "Carbon Clean",
+      "stage": "private",
+      "status": "screening",
+      "score": 55,
+      "addedDate": "2026-02-01",
+      "analyst": "sarah",
+      "notes": "Industrial carbon capture, Series C"
+    },
+    {
+      "id": "wl_004",
+      "themeId": "th_003",
+      "company": "Stripe",
+      "stage": "private",
+      "status": "under_review",
+      "score": 91,
+      "addedDate": "2025-12-10",
+      "analyst": "mike",
+      "notes": "Payments leader, delayed IPO"
+    },
+    {
+      "id": "wl_005",
+      "themeId": "th_004",
+      "company": "Biosciences",
+      "stage": "public",
+      "status": "watching",
+      "score": 62,
+      "addedDate": "2026-02-05",
+      "analyst": "sarah",
+      "notes": "Regenerative medicine pipeline"
+    },
+    {
+      "id": "wl_006",
+      "themeId": "th_005",
+      "company": "IonQ",
+      "stage": "public",
+      "status": "screening",
+      "score": 38,
+      "addedDate": "2026-01-25",
+      "analyst": "mike",
+      "notes": "Quantum computing hardware, early stage"
+    }
+  ],
+  "statusSummary": {
+    "under_review": 2,
+    "due_diligence": 1,
+    "screening": 2,
+    "watching": 1
+  },
+  "pipelineValue": {
+    "total": 6,
+    "byTheme": {
+      "th_001": 2,
+      "th_002": 1,
+      "th_003": 1,
+      "th_004": 1,
+      "th_005": 1
+    }
+  }
+}
