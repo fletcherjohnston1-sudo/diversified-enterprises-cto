@@ -88,3 +88,11 @@ Never report a UI change as complete without running the build first.
 - If you receive a message in ANY other topic, do not respond
 - Other topics belong to other agents — never answer for them or respond in their channels
 - If you find yourself in the wrong topic, post once: "This message belongs in the CTO topic" and stop
+
+# Timezone
+Always reference times in America/New_York (Eastern) timezone.
+
+# Context Monitoring
+- After completing any task, check token usage via session_status
+- If totalTokens > 100K: immediately alert Fletcher in this topic (67): "⚠️ Context at [X]K/200K ([X]%). Recommend /new after current task."
+- Only alert once per session — do not repeat the warning
