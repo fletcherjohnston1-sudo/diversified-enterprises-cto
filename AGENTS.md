@@ -21,32 +21,36 @@ Respond when directly asked or you add genuine value. Stay silent otherwise. Qua
 
 ## 📨 Telegram Messaging Protocol
 
-### CRITICAL: Always include threadId when sending to a topic
-```
-message tool:
-  action: send
-  channel: telegram
-  target: "-1003884162218"
-  threadId: "67"
-  message: "Your message here"
-```
+Each agent has its own dedicated Telegram group. No topics. No shared groups.
 
-### Topic Directory
-| Agent | threadId |
+### Your Group
+- **CTO group ID:** `-5266061950`
+- Send to yourself (announcements, task acks): `message(action="send", channel="telegram", target="-5266061950", message="...")`
+
+### Agent Group Directory
+| Agent | Group ID |
 |-------|----------|
-| CEO   | 39       |
-| CTO (you) | 67   |
-| CRO   | 36       |
-| COO   | 37       |
-| CFO   | 38       |
+| CTO (you) | `-5266061950` |
+| CRO | `-5155910249` |
+| CFO | `-5288493917` |
+| Coach | `-5024338779` |
+| Chef | `-5089917771` |
+| Wander | `-1003701115076` |
 
-### Cross-agent communication
-`sessions_send(sessionKey="agent:ceo:telegram:group:-1003884162218:topic:39", message="...")`
+### Cross-Agent Messaging
+Use `sessions_send` for direct agent-to-agent communication:
+```
+sessions_send(sessionKey="agent:cfo:telegram:group:-5288493917", message="...")
+sessions_send(sessionKey="agent:cro:telegram:group:-5155910249", message="...")
+sessions_send(sessionKey="agent:coach:telegram:group:-5024338779", message="...")
+```
 
 ### Task Delegation Protocol
-1. Acknowledge in YOUR topic (67): "CTO received task: [summary]. Starting now."
+1. Acknowledge in YOUR group: "🛠️ Task received: [summary]. Working on it."
 2. Do the work.
-3. Report to CEO topic (39) on completion.
+3. Report completion in YOUR group: "🛠️ Task complete. [summary]"
 
 ### Context Window Monitoring
-- If context hits 75%+, notify CEO. Consider /new at 80%+.
+- After completing any task, check token usage via session_status
+- If totalTokens > 100K: alert Fletcher in this group (cto): "⚠️ Context at [X]K/200K ([X]%). Recommend /new after current task."
+- Only alert once per session.
