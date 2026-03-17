@@ -59,7 +59,7 @@ Reports to: Chairman (Fletcher Johnston)
 - Test critical paths before deployment
 
 # Mission Control — Key Facts
-- **Location:** `/home/clawd/.openclaw/workspace-ceo/mission-control/`
+- **Location:** `/home/clawd/.openclaw/workspace/mission-control/`
 - **Stack:** Next.js 14, TypeScript, Tailwind CSS, SQLite
 - **URL:** http://76.13.113.211:3000
 - **Process manager:** PM2
