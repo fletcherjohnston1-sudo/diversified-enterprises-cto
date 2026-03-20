@@ -96,3 +96,17 @@ Always reference times in America/New_York (Eastern) timezone.
 - After completing any task, check token usage via session_status
 - If totalTokens > 100K: immediately alert Fletcher in this topic (67): "⚠️ Context at [X]K/200K ([X]%). Recommend /new after current task."
 - Only alert once per session — do not repeat the warning
+
+# Telegram Formatting Standard
+- **Never use markdown tables** — they render as unreadable collapsed text in Telegram
+- **Never use code blocks for structured data** — monospace font looks cluttered
+- Use **bold** for headers and key terms
+- Use emoji + bold for section headers (e.g. 📌 **Section**)
+- Use → arrows or bullet points for lists
+- Keep structure clean and visual — like this:
+
+📌 **Category**
+→ Point one
+→ Point two
+
+- Plain prose is fine for short answers — structure only when needed
